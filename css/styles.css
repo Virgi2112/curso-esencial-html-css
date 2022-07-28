@@ -1,0 +1,45 @@
+:root{
+    font-size: 18px;
+    --gray30: #212121;
+    --gray20: #212429;
+    --gray10: #616161;
+}
+
+body{
+    color: var(--gray30);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: var(--gray30);
+}
+
+h1{
+    Font-size: 60px;
+    /*text-decoration: underline;*/
+}
+
+header{
+    /*--gray10: red;*/
+    font-size: 14px;
+    color: var(--gray10);
+}
+
+header a {
+    font-size: 14px;
+    color: var(--gray10);
+    text-decoration: none;
+}
+
+header a:hover{
+    color: var(--gray30);
+}
+
+nav details summary {
+    color: var(--gray30);
+    /*font-weight: bold;*/
+}
+
+h2 {
+    font-size: 2em;
+}
