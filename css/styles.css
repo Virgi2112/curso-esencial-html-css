@@ -62,11 +62,19 @@ pre {
     height: 350px;   
 }
 
-h3::before{
-    content: '-';
+.section-content{
+    counter-reset: titlelist;
 }
 
-h3::after{
+.section-content h3{
+    counter-increment: titlelist;
+}
+
+.section-content h3::before{
+    content: counter(titlelist, decimal) ".";
+}
+
+.section-content h3::after{
     content: '';
     width: 32px;
     height: 4px;
