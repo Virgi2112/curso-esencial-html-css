@@ -59,6 +59,21 @@ pre {
     /*background-repeat: no-repeat;*/
     /*background-position: left 50px bottom 50px;*/
     /*background-size: cover;*/
-    height: 350px;
-    
+    height: 350px;   
 }
+
+h3::before{
+    content: '-';
+}
+
+h3::after{
+    content: '';
+    width: 32px;
+    height: 4px;
+    background: var(--gray30);
+    display: inline-block;
+}
+
+/*::selection {
+   background: red;
+}*/
