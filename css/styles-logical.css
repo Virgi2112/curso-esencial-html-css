@@ -1,0 +1,88 @@
+:root{
+    font-size: 18px;
+    --gray30: #212121;
+    --gray20: #212429;
+    --gray10: #616161;
+    direction: center;
+}
+
+body{
+    color: var(--gray30);
+    font-family: 'Roboto', sans-serif;
+    /*font-family:Arial, Helvetica, sans-serif;=*/
+}
+
+a{
+    color: var(--gray30);
+}
+
+h1{
+    Font-size: 60px;
+    /*text-decoration: underline;*/
+}
+
+header{
+    /*--gray10: red;*/
+    font-size: 14px;
+    color: var(--gray10);
+}
+
+header a {
+    font-size: 14px;
+    color: var(--gray10);
+    text-decoration: none;
+}
+
+header a:hover{
+    color: var(--gray30);
+}
+
+nav details summary {
+    color: var(--gray30);
+    /*font-weight: bold;*/
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+pre {
+    background: #FEC62E;
+    
+}
+
+.hero{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../images/pattern.png');
+    /*background-repeat: no-repeat;*/
+    /*background-position: left 50px bottom 50px;*/
+    /*background-size: cover;*/
+    height: 350px;   
+}
+
+.section-content{
+    counter-reset: titlelist;
+}
+
+.section-content h3{
+    counter-increment: titlelist;
+}
+
+.section-content h3::before{
+    content: counter(titlelist, decimal) ".";
+}
+
+.section-content h3::after{
+    content: '';
+    width: 32px;
+    height: 4px;
+    background: var(--gray30);
+    display: inline-block;
+}
+
+/*::selection {
+   background: red;
+}*/
