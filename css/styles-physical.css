@@ -71,20 +71,30 @@ h3 {
     margin-top: 16px;
     margin-bottom: 24px;
     font-weight: normal;
-}
+    }
 
 pre {
     background: #FEC62E;
     padding: 40px;
     /* padding-left: 40px; */
     font-family: 'Roboto';
-    line-height: 24px;    
+    line-height: 24px;  
 }
 
 blockquote {
     margin: 32px 0;
     padding-left: 16px;
     font-size: 24px;
+    /* border-top: 10px solid fuchsia; */
+    border-top-color: aqua;
+    border-bottom-color: orange;
+    border-left-color: red;
+    border-right-color:fuchsia ;
+    border-style: dashed;
+    border-radius: 20px 30px;
+    /*border-top-style: dashed;*/
+    /* border-left: 4px solid var(--gray30); */
+    line-height: 24px; 
 }
 
 blockquote span{
@@ -96,7 +106,8 @@ blockquote span::before {
 }
 
 .hero{
-    background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../images/pattern.png');
+    background-image: linear-gradient(to top, rgba(192, 32, 131, 0.61), transparent), url('../images/pattern1.jfif');
+
     /*background-repeat: no-repeat;*/
     /*background-position: left 50px bottom 50px;*/
     /*background-size: cover;*/
